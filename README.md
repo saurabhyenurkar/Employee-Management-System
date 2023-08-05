@@ -5,7 +5,6 @@
 ```console
 cd backend
 ```
-<br />
 ```console
 npm install
 ```
