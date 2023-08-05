@@ -10,5 +10,9 @@ npm install
 ```
 
 # For frontend folder Setting
-cd frontend<br />
+```console
+cd frontend
+```
+```console
 npm install
+```
