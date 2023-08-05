@@ -2,8 +2,11 @@
 
 
 # For backend folder Setting
-cd backend<br />
+```console
 npm install
+```
+<br />
+
 
 # For frontend folder Setting
 cd frontend<br />
