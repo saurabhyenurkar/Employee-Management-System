@@ -2,9 +2,9 @@
 
 
 # For backend folder Setting
-cd backend
+cd backend<br />
 npm install
 
 # For frontend folder Setting
-cd frontend
+cd frontend<br />
 npm install
