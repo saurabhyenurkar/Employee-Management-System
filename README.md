@@ -3,10 +3,12 @@
 
 # For backend folder Setting
 ```console
-npm install
+cd backend
 ```
 <br />
-
+```console
+npm install
+```
 
 # For frontend folder Setting
 cd frontend<br />
