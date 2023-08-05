@@ -26,10 +26,10 @@ app.use(express.json());
 app.use(express.static('public'));
 
 const con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "node_react"
+    host: "sql6.freemysqlhosting.net",
+    user: "sql6637735",
+    password: "jD29WpYQxV",
+    database: "sql6637735"
 })
 
 const storage = multer.diskStorage({
