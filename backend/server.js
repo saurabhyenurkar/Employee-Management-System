@@ -9,7 +9,7 @@ import path from 'path'
 
 const app = express();
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://beatzstudio.hyperphp.com/');
+    res.setHeader('Access-Control-Allow-Origin', 'http://beatzstudio.hyperphp.com');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     res.setHeader('Access-Control-Allow-Credentials', true);
@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(cors({
-    origin: ["http://localhost:5173/"],
+    origin: ["http://beatzstudio.hyperphp.com"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }));
