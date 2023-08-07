@@ -7,18 +7,13 @@ import jwt from 'jsonwebtoken'
 import multer from 'multer'
 import path from 'path'
 
-var cors = require('cors')
 const app = express();
-
-app.use(cors())
-
-app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'https://saurabhems.000webhostapp.com/');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
-});
+const corsOptions ={
+    origin:'https://saurabhems.000webhostapp.com', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 
 app.use(cors({
     origin: ["https://saurabhems.000webhostapp.com/"],
