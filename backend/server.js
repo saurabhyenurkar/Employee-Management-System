@@ -13,15 +13,15 @@ const app = express();
 app.use(cors())
 
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://beatzstudio.hyperphp.com');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Origin', 'https://saurabhems.000webhostapp.com/');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
 });
 
 app.use(cors({
-    origin: ["http://beatzstudio.hyperphp.com"],
+    origin: ["https://saurabhems.000webhostapp.com/"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }));
