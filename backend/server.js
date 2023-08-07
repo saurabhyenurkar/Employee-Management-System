@@ -7,7 +7,11 @@ import jwt from 'jsonwebtoken'
 import multer from 'multer'
 import path from 'path'
 
+var cors = require('cors')
 const app = express();
+
+app.use(cors())
+
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', 'http://beatzstudio.hyperphp.com');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
